@@ -16,6 +16,13 @@
  *
  * You should have received a copy of the GNU General Public License along with this program; if not, write 
  * to the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
+ * 
+ * @package    RemoveMetaBoxes
+ * @version    0.0.1
+ * @author     Alexandre Kozoubsky <alexandre@alexandrekozoubsky.com>
+ * @copyright  Copyright (c) 2014 - 2015, Alexandre Kozoubsky
+ * @link       https://github.com/akozoubsky/remove-meta-boxes
+ * @license    http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  */
 
 /**
@@ -54,8 +61,8 @@ function remove_dashboard_widgets() {
 
 /**
  * Remove meta box from posts.
- * http://justintadlock.com/archives/2011/04/13/uncluttering-the-post-editing-screen-in-wordpress
- * http://codex.wordpress.org/Function_Reference/remove_meta_box
+ * @link http://justintadlock.com/archives/2011/04/13/uncluttering-the-post-editing-screen-in-wordpress
+ * @link http://codex.wordpress.org/Function_Reference/remove_meta_box
  */
  
 add_action( 'add_meta_boxes', 'remove_post_meta_boxes' );
@@ -117,8 +124,8 @@ function remove_post_meta_boxes() {
 
 /**
  * Remove meta box from pages.
- * http://justintadlock.com/archives/2011/04/13/uncluttering-the-post-editing-screen-in-wordpress
- * http://codex.wordpress.org/Function_Reference/remove_meta_box
+ * @link http://justintadlock.com/archives/2011/04/13/uncluttering-the-post-editing-screen-in-wordpress
+ * @link http://codex.wordpress.org/Function_Reference/remove_meta_box
  */
 
 add_action( 'add_meta_boxes', 'remove_page_meta_boxes' );
